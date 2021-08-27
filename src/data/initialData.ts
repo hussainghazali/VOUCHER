@@ -1,0 +1,50 @@
+import { ProductLine, Invoice } from './types'
+
+export const initialProductLine: ProductLine = {
+  description: '',
+  quantity: '1',
+  rate: '0.00',
+}
+
+export const initialInvoice: Invoice = {
+  logo: '',
+  logoWidth: 100,
+  title: 'Fees Challan',
+  companyName: 'AL MAARIJ HIFZ',
+  name: '',
+  companyAddress: '',
+  companyAddress2: 'Karachi',
+  companyCountry: 'Pakistan',
+  billTo: 'Bill To:',
+  clientName: '',
+  clientAddress: '',
+  clientAddress2: 'Karachi',
+  clientCountry: 'Pakistan',
+  invoiceTitleLabel: 'Invoice#',
+  invoiceTitle: '',
+  invoiceDateLabel: 'Invoice Date',
+  invoiceDate: '',
+  invoiceDueDateLabel: 'Due Date',
+  invoiceDueDate: '',
+  productLineDescription: 'Fees Description',
+  productLineQuantity: 'Student No',
+  productLineQuantityRate: 'Fees',
+  productLineQuantityAmount: 'Amount',
+  productLines: [
+    {
+      description: 'Fees',
+      quantity: '1',
+      rate: '15000',
+    },
+    { ...initialProductLine },
+    { ...initialProductLine },
+  ],
+  subTotalLabel: '',
+  taxLabel: '',
+  totalLabel: 'TOTAL',
+  currency: 'Rs.',
+  notesLabel: 'Notes',
+  notes: 'If depositing in account, please send picture of the deposit slip , Account # 01171709701  SCB. If depositing in cash, please send a confirmation message',
+  termLabel: 'Terms & Conditions',
+  term: 'Please make the payment by the due date.',
+}
